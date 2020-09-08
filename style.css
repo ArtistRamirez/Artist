@@ -1,0 +1,175 @@
+/*
+color pallet
+#343434 - dark grey
+#2F3061 - blue dark
+#FFE66D - Yellow
+#A1C6D7 - blue light
+*/
+
+html{
+    box-sizing: border-box;
+
+}
+*,*::before,*after {
+    box-sizing: inherit;
+}
+
+body { color: #343434;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height:1.5 ;
+}
+
+
+
+img { width: 300px;}
+  
+
+a {
+    color:#FFE66D;
+}
+
+a:hover {
+    text-decoration: none;
+}
+ 
+h1{
+    font-size: 75px;
+}
+
+
+h2 {font: 45px;}
+ 
+
+h1,h2 {
+    font-family: 'Courgette', cursive;
+    font-weight: 400;
+    margin: 0;
+ }
+
+ .content-wrap {
+     max-width: 800px;
+     width:85%;
+     margin:0 auto;
+     padding:60px 0;
+ }
+
+ .divider > section  { 
+     border-bottom: 1px dashed #343434;
+     padding: 25px 0;
+
+ }
+ .divider > section:last-of-type {
+     border-bottom: none;
+ }
+
+  h3 + p{ 
+      font-style: italic;
+  }
+
+
+
+header { background:#2F3061 ;
+         color:#F7FFF7 ;
+         ;}
+
+
+
+
+
+.projects { background:#F7FFF7 ;}
+
+.projects a{
+
+    color:#2F3061
+}
+
+.projects .btn {
+    color:#F7FFF7; 
+    background:#2F3061 ;
+    text-decoration: none; 
+    padding: 8px; 
+    border-radius: 4px;
+    display: inline-block;
+}
+
+
+.projects .btn {
+    background: rgba(47,48,97,80%);
+}
+
+
+
+
+.project-item  { overflow: hidden;
+                 border-bottom: 1px dashed #343434;
+                 padding: 25px 0;
+
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
+.work-experience { background: #A1C6D7;}
+
+.education {
+
+    background-image: url( /Users/artist/Downloads/Assignment3Start/css/images/joanna-kosinska-unsplash.jpg);
+    background-size:cover;
+    background-position: top right;
+    padding-bottom: 100px;
+}
+
+.education p {
+    width:60%
+}
+footer {color:#F7FFF7; 
+    background: #343434; 
+      }
+
+.contact-list {
+
+    list-style: none;
+    padding: 0;
+    
+}
+
+.contact-list a {
+    padding:15px ;
+    display: inline-block;
+}
+
+@media screen and (min-width:750px){header,footer{text-align: center}
+.project-item img { float: left;
+    margin-right: 20px;
+
+}
+
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+}
+ 
+.contact-list {   display: flex;
+                  justify-content: center;
+
+}
+    
+}
+@media screen and (max-width:750px) {
+
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {line-height: 1;}
+
+    .contact-list a {
+        padding: 5px;
+    }
+
+}
